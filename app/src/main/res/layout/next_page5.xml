@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layoutMarginSize"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/q5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/quiz5"
+            android:textSize="@dimen/TitleTextSize" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ImageViewHeightSize"
+            android:src="@drawable/africamap" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/layoutMarginSize"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:background="@color/backgroundOfBtns"
+            android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/egypt2AnswerId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/egypt2Answer"
+            android:textSize="@dimen/checkBox_TextSize" />
+
+        <CheckBox
+            android:id="@+id/ghanaAnswerId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ghanaAnswer"
+            android:textSize="@dimen/checkBox_TextSize" />
+
+        <CheckBox
+            android:id="@+id/tunisiaAnswerId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tunisiaAnswer"
+            android:textSize="@dimen/checkBox_TextSize" />
+
+        <CheckBox
+            android:id="@+id/chinaAnswerId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/chinaAnswer"
+            android:textSize="@dimen/checkBox_TextSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nextPageButtonSize"
+                android:layout_weight="1"
+                android:background="@color/backgroundOfIntent"
+                android:onClick="nextE"
+                android:elevation="10dp"
+                android:src="@android:drawable/ic_media_ff"
+                tools:ignore="OnClick" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nextPageButtonSize"
+                android:layout_weight="1"
+                android:elevation="10dp"
+                android:onClick="submitButton"
+                android:text="@string/checkbox_result"
+                android:textSize="@dimen/checkBoxSize"
+                tools:ignore="OnClick" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layoutMarginSize"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/q1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/quiz1"
+            android:textSize="@dimen/TitleTextSize" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ImageViewHeightSize"
+            android:src="@drawable/egypt" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layoutMarginSize"
+            android:background="@color/backgroundOfBtns"
+            android:layout_marginTop="@dimen/radioMarginTop"
+            android:elevation="10dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/egyptAnswerId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="egyptAnswerClick"
+                android:text="@string/egyptAnswer"
+                android:textSize="@dimen/textSizeChoose" />
+
+            <RadioButton
+                android:id="@+id/spainAnswerId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="spainAnswerClick"
+                android:text="@string/spainAnswer"
+                android:textSize="@dimen/textSizeChoose" />
+
+            <RadioButton
+                android:id="@+id/brazilAnswerId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="brazilAnswerClick"
+                android:text="@string/brazilAnswer"
+                android:textSize="@dimen/textSizeChoose" />
+
+            <RadioButton
+                android:id="@+id/bahrainAnswerId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="bahrainAnswerClick"
+                android:text="@string/bahrainAnswer"
+                android:textSize="@dimen/textSizeChoose" />
+
+        </RadioGroup>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/nextPageButtonSize"
+            android:layout_marginTop="@dimen/layoutMarginSize"
+            android:background="@color/backgroundOfIntent"
+            android:onClick="nextA"
+            android:elevation="10dp"
+            android:src="@android:drawable/ic_media_ff" />
+    </LinearLayout>
+
+</ScrollView>

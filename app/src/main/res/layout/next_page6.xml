@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layoutMarginSize"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/q6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quiz6"
+            android:textSize="@dimen/TitleTextSize"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ImageViewHeightSize"
+            android:src="@drawable/russia"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/answer"
+            android:textColor="#000000"
+            android:textSize="@dimen/textSizeChoose" />
+
+        <EditText
+            android:id="@+id/Answer3Id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editText_layout_height1"
+            android:layout_marginBottom="@dimen/FinishButtonMargin"
+            android:hint="@string/EnterEditText"
+            android:inputType="text"
+            android:onClick="Answer3onClick"
+            android:textSize="@dimen/textSizeChoose"
+            tools:ignore="OnClick" />
+
+        <ImageButton
+            android:layout_width="@dimen/Image_layout_width"
+            android:layout_height="@dimen/Image_layout_height"
+            android:layout_gravity="center"
+            android:onClick="nextF"
+            android:elevation="10dp"
+            android:src="@drawable/finish"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+
+</ScrollView>
